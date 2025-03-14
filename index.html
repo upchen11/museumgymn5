@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей Гимназии 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: linear-gradient(to left, #a7c7e7, #a7e7c7, #27ae60);
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        ::-webkit-scrollbar {
+              display: none;
+            }
+
+            html {
+              scrollbar-width: none;
+              -ms-overflow-style: none;
+            }
+
+        .logo {
+            margin-left: 40px;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-right: 15px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 15px;
+            font-size: 40%;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: left;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 12px;
+            position: relative;
+        }
+
+        .navbar a::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .navbar a:focus {
+            outline: none;
+        }
+
+        .welcome-section {
+            background-image: url('img/3214.png');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .welcome-section img {
+            max-width: 60%;
+            max-height: 60%;
+            object-fit: cover;
+        }
+
+        .section-text {
+            font-family: "Roboto", sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 30px;
+            margin-left: 80px;
+            text-align: left;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+        }
+
+        .section-item {
+            text-align: center;
+            max-width: 300px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .section-item img {
+            width: 30%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .section-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .section-item a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 10px;
+            font-family: "Great Vibes", serif;
+        }
+
+        .section-item a:hover {
+            text-decoration: underline;
+        }
+        .section-item p {
+            display: block;
+            color: black;
+            text-decoration: none;
+            font-size: 8px;
+            margin-top: 20px;
+
+        }
+
+
+        .marg1{
+          margin-top: 25px;
+
+
+        }
+        .razm{
+          width: 50%;
+          border-radius: 100px;
+        }
+
+    .row-container {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+    }
+
+
+    .text-content {
+        text-align: justify;
+        max-width: 35%;
+    }
+    .glavtxt{
+      font-family: "Roboto", sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 100px;
+      text-align: center;
+    }
+
+
+    .map-section {
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    iframe {
+        width: 300px;
+        height: 200px;
+        border-radius: 15px;
+        border: none;
+    }
+
+    .footer-navbar {
+    background: linear-gradient(to left, #a7c7e7, #a7e7c7, #27ae60);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer-navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.footer-navbar a:hover {
+    color: #27ae60;
+}
+
+.footer-text {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/321.png" alt="Логотип">
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Главная</a>
+            <a href="https://gim5.ucoz.ru/index/shkolnyj_muzej/0-41">Архивы</a>
+            <a href="#contact">Контакты</a>
+
+        </div>
+    </div>
+
+    <div class="welcome-section">
+        <img src="img/text1.png" alt="Фото с текстом">
+    </div>
+
+    <div class="section-text">
+      Актуальная сейчас информация:
+    </div>
+    <div class="section">
+
+    <div class="section-item" id="history">
+        <a href="index2.html">
+            <img src="img/gerb.jpg" alt="Герб гимназии">
+        </a>
+        <a href="index2.html">Герб гимназии</a>
+        <p>Герб МБОУ гимназии №5 г. Екатеринбурга является официальным символом гимназии.</p>
+    </div>
+
+    <div class="section-item">
+        <a href="index3.html">
+            <img src="img/flag.jpg" alt="Флаг гимназии">
+        </a>
+        <a href="index3.html">Флаг гимназии</a>
+        <p>Флаг МБОУ гимназии №5 г. Екатеринбурга является официальным символом гимназии.</p>
+    </div>
+
+    <div class="section-item">
+        <a href="index4.html">
+            <img src="img/history.jpg" alt="История гимназии">
+        </a>
+        <a href="index4.html">Музей в истории гимназии</a>
+        <p>Музей МБОУ гимназии №5 г. Екатеринбурга — это история школы, её традиции и достижения, сохранённые в экспонатах.</p>
+    </div>
+
+</div>
+
+
+
+    <p class="glavtxt">О гимназии</p>
+
+    <div class="row-container">
+      <img src="img/old.jpeg" alt="Изображение 1" class="razm">
+      <div class="text-content">
+          <p>Гимназия №5 г. Екатеринбурга – одно из старейших учебных заведений города, основанное в 1919 году, с углубленным изучением математики, высоким уровнем подготовки и богатой историей образовательных достижений.</p>
+      </div>
+    </div>
+
+
+
+
+    <div class="map-section">
+      <p class="glavtxt">Где мы находимся</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1495.4636134984441!2d60.59219961758247!3d56.832474848485774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16ef47581311b%3A0xcd1e43272b862c26!2z0JPQuNC80L3QsNC30LjRjyDihJYgNQ!5e1!3m2!1sru!2sro!4v1740585504668!5m2!1sru!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+    <div class="footer-navbar">
+    <div class="footer-text">
+        <p>&copy; 2025 МБОУ Гимназия №5 г. Екатеринбурга. Все права защищены.</p>
+    </div>
+    <div class="social-links" id="contact">
+        <a href="https://vk.com/mbougimn5">Vkontakte</a>
+        <a href="https://sferum.ru/?p=messages&join=cTsrYtxBah/Orx7OZ9QzHpa9L7eTfJeDTEk=">Sferum</a>
+        <a href="https://гимназия5.екатеринбург.рф/">Сайт школы</a>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

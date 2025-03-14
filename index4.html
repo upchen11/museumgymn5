@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей Гимназии 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            padding-bottom: 100px;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: linear-gradient(to left, #a7c7e7, #a7e7c7, #27ae60);
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-right: 15px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: left;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+        }
+
+        .navbar a::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .navbar a:focus {
+            outline: none;
+        }
+
+        .row-container {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+        }
+
+        .left-content {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            margin-left: 20px;
+        }
+
+        .left-content img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right:100px;
+        }
+
+        .left-content .text {
+            max-width: 500px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        .glavtxt {
+            font-family: "Roboto", sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .footer-navbar {
+            background: linear-gradient(to left, #a7c7e7, #a7e7c7, #27ae60);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        .footer-navbar a:hover {
+            color: #27ae60;
+        }
+
+        .footer-text {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/321.png" alt="Логотип">
+        </div>
+        <div class="navbar-links">
+          <a href="gymnm.html">Вернуться на главную</a>
+        </div>
+    </div>
+
+    <div class="row-container">
+        <div class="left-content">
+            <img src="img/old.jpg" alt="Изображение">
+            <div class="text">
+                <p class="glavtxt">История Музея</p>
+                <p>
+
+        4 ноября 1967 года в средней школе № 5 имени В.И. Ленина г. Свердловска по адресу ул. Хохрякова, 29а открылся Ленинский музей.
+
+        Вся поисковая, исследовательская, научная, общественная работа шла под девизом - «Заветам Ленина верны!». Это был большой зал. Завод медицинских препаратов (шефы школы) сделал красивое качественное достойное оформление, добротную специально изготовленную для музея мебель. Все материалы были посвящены Ленину. Проходили пионерские сборы, комсомольские собрания, торжественные мероприятия. Отовсюду – из других городов, республик, зарубежных стран приезжали делегации, были творческие встречи с артистами, художниками, композиторами, знаменитыми спортсменами. Многие из них были нашими выпускниками. Пионерские отряды вели большую поисковую работу о выпускниках школы, ушедших на фронт, встречались с интересными людьми, записывали их воспоминания.
+
+        Школа № 5 всегда была сильна своими традициями. В 1967 году за образцовую работу школа была награждена Почетным знаменем Президиума Верховного совета СССР и ЦК ВЦСПС. Знамя было оставлено школе на вечное хранение. Традиций у школы много. Они все представлены на стендах музея и, конечно, продолжают жить. Этим и сильна школа.
+
+        В 1981 году «За большую поисково-исследовательскую, общественно-полезную работу, создание интересной экспозиции и успехи в коммунистическом воспитании учащихся» Ленинскому музею было присвоено звание «Школьный музей» (Свидетельство № 4067 от 22 сентября 1981 года).
+
+        В 1999 году на базе Ленинского музея был создан Музей истории школы, у него появился свой Паспорт, выданный Центром детско-юношеского туризма при Департаменте образования Администрации Свердловской области. В 2000 году «За большую поисково-исследовательскую работу, создание интересной экспозиции и успехи в изучении родного края областная аттестационная комиссия присвоила звание «Школьный музей» Музею истории школы гимназии № 5 г. Екатеринбурга Свердловской области.
+
+        В 2008 году здание школы, построенное в 1935 году, было снесено, музей эвакуировали. Его экспонаты были упакованы и три года хранились в другой школе. В 2011 году была открыта новая школа по старому адресу ул. Хохрякова, 29а , помещение под музей было выделено. Родители-художники постарались оформить музей в том же стиле. Сохранились тематические разделы музея, его выставки, его атмосфера, его традиции. Он был вновь открыт 17 мая 2012 года.
+
+        2022 год Всероссийский конкурс цифровизации фондов и экспозиций школьных музеев «Школьный музей: цифровой формат». Номинация «Лучший городской школьный музей», региональный этап – I место, диплом; федеральный этап – 2023 год, III место по УРФО, грант – 200 тыс. рублей.
+              </p>
+              <p class="glavtxt">Направления деятельности Музея</p>
+              <p>Музей является центром музейно-педагогической работы, служит воспитанию гражданственности и патриотизма.
+                <ul>
+                    <li>Образовательная деятельность – деловые игры, квесты, использование материалов музея для уроков истории, литературы, написания проектов, обучение «музейным» профессиям, проведение экскурсий в музее и участие в этих экскурсиях.</li>
+                    <li>Исследовательская деятельность – работа с архивом музея, изучение истории экспонатов и документов.</li>
+                    <li>Творческая деятельность – участие в городских, областных, российских акциях, смотрах, конкурсах патриотической направленности, Ночи музеев, поэтических и песенных фестивалях.</li>
+                    <li>Организационно - оформительская деятельность - выставки, портретные галереи.</li>
+                    <li>Информатизация музея – сканирование и оцифровывание музейных материалов, фото и видеосъемка различных мероприятий, электронная систематизация.</li>
+                </ul>
+              </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-navbar">
+        <div class="footer-text">
+            <p>&copy; 2025 МБОУ Гимназия №5 г. Екатеринбурга. Все права защищены.</p>
+        </div>
+        <div class="social-links">
+            <a href="https://vk.com/mbougimn5">Vkontakte</a>
+            <a href="https://sferum.ru/?p=messages&join=cTsrYtxBah/Orx7OZ9QzHpa9L7eTfJeDTEk=">Sferum</a>
+        </div>
+    </div>
+
+</body>
+</html>
